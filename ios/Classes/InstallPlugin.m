@@ -5,7 +5,6 @@
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"install_plugin"
             binaryMessenger:[registrar messenger]];
-  WechatPlugin* instance = [[WechatPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
 
