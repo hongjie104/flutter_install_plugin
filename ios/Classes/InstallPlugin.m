@@ -12,7 +12,7 @@
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
   if ([@"gotoAppStore" isEqualToString:call.method]) {
     // result([@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]]);
-    result([@"success"]);
+    result(@"success");
   } else {
     result(FlutterMethodNotImplemented);
   }
