@@ -15,8 +15,8 @@ class InstallPlugin {
   }
 
   /// for iOS: go to app store by the url
-  static Future<String> gotoAppStore(String urlString) async {
-    Map<String, String> params = {'urlString': urlString};
+  static Future<String> gotoAppStore(String id) async {
+    Map<String, String> params = {'id': id};
     return await _channel.invokeMethod('gotoAppStore', params);
   }
 }
